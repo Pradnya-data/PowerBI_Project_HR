@@ -1,0 +1,74 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
+  "name": "ac172552aaeb36ef0922",
+  "position": {
+    "x": 48.333333333333336,
+    "y": 190,
+    "z": 4,
+    "height": 188.33333333333334,
+    "width": 200,
+    "tabOrder": 4
+  },
+  "visual": {
+    "visualType": "gauge",
+    "query": {
+      "queryState": {
+        "TargetValue": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "HR_Analytics_data"
+                    }
+                  },
+                  "Property": "Attrition Target %"
+                }
+              },
+              "queryRef": "HR_Analytics_data.Attrition Target %",
+              "nativeQueryRef": "Attrition Target %"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "HR_Analytics_data"
+                    }
+                  },
+                  "Property": "Attrition Ratio"
+                }
+              },
+              "queryRef": "HR_Analytics_data.Attrition Ratio",
+              "nativeQueryRef": "Attrition Ratio"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "HR_Analytics_data"
+                  }
+                },
+                "Property": "Attrition Ratio"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

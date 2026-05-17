@@ -1,0 +1,52 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
+  "name": "45a1116f0359770a4000",
+  "position": {
+    "x": 522,
+    "y": 10,
+    "z": 6000,
+    "height": 112,
+    "width": 252,
+    "tabOrder": 6000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "HR_Analytics_data"
+                    }
+                  },
+                  "Property": "OverTime"
+                }
+              },
+              "queryRef": "HR_Analytics_data.OverTime",
+              "nativeQueryRef": "OverTime"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "HR_Analytics_data"
+                    }
+                  },
+                  "Property": "Retention %"
+                }
+              },
+              "queryRef": "HR_Analytics_data.Retention %",
+              "nativeQueryRef": "Retention %"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

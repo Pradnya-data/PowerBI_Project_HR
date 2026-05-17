@@ -1,0 +1,109 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
+  "name": "443df4b257b0351d68c6",
+  "position": {
+    "x": 429.50401179249235,
+    "y": 304.63223839595304,
+    "z": 2000,
+    "height": 208.57702809092279,
+    "width": 579.07569641032512,
+    "tabOrder": 2000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "HR_Analytics_data"
+                    }
+                  },
+                  "Property": "BusinessTravel"
+                }
+              },
+              "queryRef": "HR_Analytics_data.BusinessTravel",
+              "nativeQueryRef": "BusinessTravel"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "HR_Analytics_data"
+                    }
+                  },
+                  "Property": "Retention Count"
+                }
+              },
+              "queryRef": "HR_Analytics_data.Retention Count",
+              "nativeQueryRef": "Retention Count"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "HR_Analytics_data"
+                    }
+                  },
+                  "Property": "Attrition Ratio"
+                }
+              },
+              "queryRef": "HR_Analytics_data.Attrition Ratio",
+              "nativeQueryRef": "Attrition Ratio"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "HR_Analytics_data"
+                    }
+                  },
+                  "Property": "Attrition Count"
+                }
+              },
+              "queryRef": "HR_Analytics_data.Attrition Count",
+              "nativeQueryRef": "Attrition Count"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "HR_Analytics_data"
+                    }
+                  },
+                  "Property": "Retention rate"
+                }
+              },
+              "queryRef": "HR_Analytics_data.Retention rate",
+              "nativeQueryRef": "Retention rate"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "stylePreset": [
+        {
+          "properties": {
+            "name": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Minimal'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
